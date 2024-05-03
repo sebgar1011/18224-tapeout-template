@@ -39,7 +39,7 @@ press the reset button.
 
 The buttons should be mapped to io_in inputs according to these assignments:
 
-![](input.png)
+![](inputs.png)
 
 btn[3] is used to change the position of the selected tile when the system is in
 setup mode (the first stage in the video demo). btn[4] is used to save the state
@@ -49,7 +49,7 @@ state where the Game of Life will play out.
 Similarly, the VGA outputs (if using a PMOD VGA connector like the one from
 Digilent) should be the following:
 
-![](output.png)
+![](outputs.png)
 
 Only 11 of the 12 outputs are used. Each output is used for the VGA display. The
 pin names correspond to the pins shown in the diagram below for the PMOD VGA
