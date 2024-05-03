@@ -39,13 +39,7 @@ press the reset button.
 
 The buttons should be mapped to io_in inputs according to these assignments:
 
-// Only buttons 3, 4, 5, 6 used
-    always_comb begin
-        btn[3] = io_in[0];
-        btn[4] = io_in[1];
-        btn[5] = io_in[2];
-        btn[6] = io_in[3];
-    end
+![](inputs.png)
 
 btn[3] is used to change the position of the selected tile when the system is in
 setup mode (the first stage in the video demo). btn[4] is used to save the state
@@ -55,20 +49,7 @@ state where the Game of Life will play out.
 Similarly, the VGA outputs (if using a PMOD VGA connector like the one from
 Digilent) should be the following:
 
-// Now mapping io_out to VGA output
-    always_comb begin
-        io_out[0] = gp16;
-        io_out[1] = gp17;
-        io_out[2] = gn23;
-        io_out[3] = gp22;
-        io_out[4] = gn21;
-        io_out[5] = gp23;
-        io_out[6] = gp22;
-        io_out[7] = gp21;
-        io_out[8] = gn16;
-        io_out[9] = gn15;
-        io_out[10] = gn14;
-    end
+![](outputs.png)
 
 Only 11 of the 12 outputs are used. Each output is used for the VGA display. The
 pin names correspond to the pins shown in the diagram below for the PMOD VGA
@@ -94,5 +75,5 @@ runs through pixel values and checks what the state of each should be.
 
 ## Media
 
-![](Demo_Video.mov)
+There is a demo video in Demo_Video.mov
 
